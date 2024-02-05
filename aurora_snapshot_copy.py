@@ -5,8 +5,8 @@ import operator
 ACCOUNT     = 'your-accound-id'
 
 dictRegion  = {
-                'virginia':  {'srcRegion': 'your-source-region', 'destRegion': 'your-destination-region', 'databases': ["your-database-name"], 'kmsKey': 'arn:aws:kms:us-west-2:123456890:key/123456890-1234-1234-1234-123456890'},
-                'dublin' :  {'srcRegion': 'your-source-region', 'destRegion': 'your-destination-region', 'databases': ["your-database-name", "your-database-name"], 'kmsKey': 'arn:aws:kms:eu-central-1:123456890:key/123456890-1234-1234-1234-123456890' }
+                'region1':  {'srcRegion': 'your-source-region', 'destRegion': 'your-destination-region', 'databases': ["your-database-name"], 'kmsKey': 'arn:aws:kms:us-west-2:123456890:key/123456890-1234-1234-1234-123456890'},
+                'region2' : {'srcRegion': 'your-source-region', 'destRegion': 'your-destination-region', 'databases': ["your-database-name", "your-database-name"], 'kmsKey': 'arn:aws:kms:eu-central-1:123456890:key/123456890-1234-1234-1234-123456890' }
             }
 
 def copy_latest_snapshot():

@@ -62,6 +62,7 @@ def copy_latest_snapshot():
                     print(f'{ strDbSnapshotName } Already copied')
 
 def remove_old_snapshots():
+  
     for strKey, dictValue in dictRegion.items():
         objDestClient = boto3.client('rds', region_name=dictValue['destRegion'])
 
